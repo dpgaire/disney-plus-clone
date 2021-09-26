@@ -69,12 +69,36 @@ const NavMenu =styled.div `
              span{
                  font-size:13px;
                  letter-spacing:1.42px;
+                 position:relative;
+
+                  &:after{
+                    content:"";
+                    height:2px;
+                    background:white;
+                    position:absolute;
+                    left:0;
+                    right:0;
+                    bottom:-6px;
+                    opacity:0;
+                    transform:scaleX(0);
+                    transform-origin:left center;
+                    transition:all 250ms cubic-bezier(0.25,0.46,0.45,0.95) 0s;
+                  }
              }
+
+             &:hover{
+                 span:after{
+                  opacity:1;
+                  transform:scaleX(1); 
+                 }
+                                 
+             }
+
+                 
+
+            
         }
-        a:hover{
-            border-bottom:1px solid #fff;
-            transition:all 2.5s ease;
-        }
+        
        
 `
 const UserImg=styled.img `
