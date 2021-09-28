@@ -58,6 +58,7 @@ const Carousel = styled(Slider) `
 
 `
 const Wrap =styled.div `
+    cursor:pointer;
     display:block;
     width:100%;
     img{
