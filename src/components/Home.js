@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components';
 import ImgSlider from './ImgSlider';
+import Viewers from './Viewers'
 
 function Home() {
     return (
         <Container>
-            <ImgSlider/>
+            <ImgSlider />
+            <Viewers />
         </Container>
     )
 }
@@ -17,6 +19,7 @@ const Container = styled.main `
     pading:0 calc(3.5vh + 5px);
     position:relative;
     overflow-x:hidden;
+   
 
     &:before{
         background:url('images/home-background.png') center center /cover no-repeat fixed;
