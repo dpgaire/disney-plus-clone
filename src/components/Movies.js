@@ -1,21 +1,34 @@
 import React from 'react'
 import styled from 'styled-components';
-function Movies({title}) {
+function Movies({title,imgSrc}) {
+    console.log(imgSrc);
     return (
         <Container>
            <h4>{title}</h4>
           <Content>
             <Wrap>
-                <img src="https://w0.peakpx.com/wallpaper/827/470/HD-wallpaper-alvin-simon-theodore-alvin-simon-theodore-cartoons.jpg"/>
+                <img src={imgSrc}/>
             </Wrap>
             <Wrap>
-                <img src="https://w0.peakpx.com/wallpaper/827/470/HD-wallpaper-alvin-simon-theodore-alvin-simon-theodore-cartoons.jpg"/>
+                <img src={imgSrc}/>
             </Wrap>
             <Wrap>
-                <img src="https://w0.peakpx.com/wallpaper/827/470/HD-wallpaper-alvin-simon-theodore-alvin-simon-theodore-cartoons.jpg"/>
+                <img src={imgSrc}/>
             </Wrap>
             <Wrap>
-                <img src="https://w0.peakpx.com/wallpaper/827/470/HD-wallpaper-alvin-simon-theodore-alvin-simon-theodore-cartoons.jpg"/>
+               <img src={imgSrc}/>
+            </Wrap>
+            <Wrap>
+               <img src={imgSrc}/>
+            </Wrap>
+            <Wrap>
+               <img src={imgSrc}/>
+            </Wrap>
+            <Wrap>
+               <img src={imgSrc}/>
+            </Wrap>
+            <Wrap>
+               <img src={imgSrc}/>
             </Wrap>
           </Content>
         </Container>
@@ -37,6 +50,7 @@ const Content=styled.div `
 `
 const Wrap=styled.div `
     cursor:pointer;
+    overflow:hidden;
     border-radius:10px;
     border:3px solid rgba(249,249,249,0.1);
     box-shadow:rgb(0 0 0 / 69%) 8px 26px 30px -10px,

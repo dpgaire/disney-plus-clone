@@ -11,12 +11,15 @@ function Home() {
             <Viewers />
             <Movies 
                title="Recommended For You"
+               imgSrc="https://w0.peakpx.com/wallpaper/827/470/HD-wallpaper-alvin-simon-theodore-alvin-simon-theodore-cartoons.jpg"
             />
             <Movies
                 title="New To Disney +"
+               imgSrc="https://fitsoffury.files.wordpress.com/2019/02/alvin-and-the-chipmunks-chipwrecked.jpg"                          
             />
             <Movies 
                 title="Orginals"
+                imgSrc="https://i.ytimg.com/vi/3JX-6Z7ExCU/maxresdefault.jpg"
             />
         </Container>
     )
